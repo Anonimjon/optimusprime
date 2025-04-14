@@ -1,0 +1,93 @@
+2025-04-11 15:36:45,961 - aiogram.dispatcher - INFO - Start polling
+2025-04-11 15:36:46,108 - aiogram.dispatcher - INFO - Run polling for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
+2025-04-11 15:39:47,781 - aiogram.dispatcher - INFO - Polling stopped for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
+2025-04-11 15:39:47,786 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-11 15:39:59,240 - aiogram.dispatcher - INFO - Start polling
+2025-04-11 15:39:59,357 - aiogram.dispatcher - INFO - Run polling for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
+2025-04-11 15:40:10,025 - aiogram.event - INFO - Update id=205308322 is handled. Duration 530 ms by bot id=7596232884
+2025-04-11 15:40:23,020 - aiogram.event - INFO - Update id=205308323 is handled. Duration 500 ms by bot id=7596232884
+2025-04-11 15:40:27,131 - aiogram.event - INFO - Update id=205308324 is handled. Duration 515 ms by bot id=7596232884
+2025-04-11 15:40:29,347 - aiogram.event - INFO - Update id=205308325 is not handled. Duration 342 ms by bot id=7596232884
+2025-04-11 15:40:29,347 - aiogram.event - ERROR - Cause exception while process update id=205308325 by bot id=7596232884
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\user\Desktop\Javohir\tg_dars1\app.py", line 121, in xabar_kelganda
+    await m.answer(chat_id="6402500187"or "6402500187",text=f"{m.from_user.full_name}sizning botingizga '{m.text}' deb yozdi")
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\types\message.py", line 2044, in answer
+    return SendMessage(
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+2025-04-11 15:40:36,066 - aiogram.event - INFO - Update id=205308326 is not handled. Duration 327 ms by bot id=7596232884
+2025-04-11 15:40:36,066 - aiogram.event - ERROR - Cause exception while process update id=205308326 by bot id=7596232884
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\user\Desktop\Javohir\tg_dars1\app.py", line 121, in xabar_kelganda
+    await m.answer(chat_id="6402500187"or "6402500187",text=f"{m.from_user.full_name}sizning botingizga '{m.text}' deb yozdi")
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\types\message.py", line 2044, in answer
+    return SendMessage(
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+2025-04-11 16:11:44,544 - aiogram.dispatcher - INFO - Polling stopped for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
+2025-04-11 16:11:44,561 - aiogram.dispatcher - INFO - Polling stopped
