@@ -91,3 +91,65 @@ Traceback (most recent call last):
 TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
 2025-04-11 16:11:44,544 - aiogram.dispatcher - INFO - Polling stopped for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
 2025-04-11 16:11:44,561 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-14 16:08:24,129 - aiogram.dispatcher - INFO - Start polling
+2025-04-14 16:08:24,247 - aiogram.dispatcher - INFO - Run polling for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
+2025-04-14 16:08:25,039 - aiogram.event - INFO - Update id=205308328 is handled. Duration 593 ms by bot id=7596232884
+2025-04-14 16:08:25,050 - aiogram.event - INFO - Update id=205308327 is handled. Duration 609 ms by bot id=7596232884
+2025-04-14 16:08:38,776 - aiogram.event - INFO - Update id=205308329 is handled. Duration 297 ms by bot id=7596232884
+2025-04-14 16:08:42,192 - aiogram.event - INFO - Update id=205308330 is not handled. Duration 452 ms by bot id=7596232884
+2025-04-14 16:08:42,192 - aiogram.event - ERROR - Cause exception while process update id=205308330 by bot id=7596232884
+ValidationError: 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.8/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\user\Desktop\Javohir\tg_dars1\main.py", line 85, in ha_tanlanganda
+    await  call.bot.send_message(chat_id=getenv("ADMINS1"),\
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\client\bot.py", line 2892, in send_message
+    call = SendMessage(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.8/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-04-14 16:24:18,237 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-14 16:24:18,284 - aiogram.dispatcher - INFO - Polling stopped for bot @javokhir_konkurs_bot id=7596232884 - 'javokhir_konkurs'
